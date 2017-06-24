@@ -20,7 +20,6 @@ THREAD_COUNT = 50
 schedule = 0
 # profile_image_url_local
 HOST, USER, PASSWD, DB, PORT = '****', '****', '****', '****', ****
-#HOST,USER,PASSWD,DB,PORT = '1.192.90.168','jiaowei','jiaowei_123','CollectTwitter',33306
 secect_sql = 'select user_id,profile_image_url_https,flag from ' + \
     Table + ' where flag = 1'
 update_sql = 'update ' + Table + ' set flag = 2 where user_id = %s'
